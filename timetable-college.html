@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .timetable {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .timetable th,
+    .timetable td {
+      border: 1px solid #ccc;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .timetable th {
+      background-color: #f0f0f0;
+    }
+
+    .timetable td.subject {
+      font-weight: bold;
+    }
+
+    /* Responsive styling */
+    @media screen and (max-width: 600px) {
+      .container {
+        margin: 20px auto;
+        border-radius: 0;
+      }
+
+      .timetable th,
+      .timetable td {
+        padding: 10px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <table class="timetable">
+    <thead>
+      <tr>
+        <th>Time Slot</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08:00 - 09:00</td>
+        <td class="subject">Maths<br>Mr. A</td>
+        <td class="subject">Science<br>Ms. B</td>
+        <td class="subject">English<br>Mr. C</td>
+        <td class="subject">History<br>Ms. D</td>
+        <td class="subject">Geography<br>Mr. E</td>
+      </tr>
+      <tr>
+        <td>09:00 - 10:00</td>
+        <td class="subject">Physics<br>Mr. F</td>
+        <td class="subject">Chemistry<br>Ms. G</td>
+        <td class="subject">Biology<br>Mr. H</td>
+        <td class="subject">Physical Ed.<br>Ms. I</td>
+        <td class="subject">Art<br>Mr. J</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td colspan="5">Break</td>
+      </tr>
+      <!-- Add more rows for more time slots -->
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
